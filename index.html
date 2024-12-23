@@ -3,25 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Bilingual Site</title>
+    <title>Peace Plan by Ukrainian People</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
             text-align: center;
-            margin: 50px;
+            padding: 20px;
+            background-color: #333;
+            color: white;
         }
         .content {
-            margin: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 1000px;
         }
         .language-switcher {
-            margin: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
         }
         .hidden {
             display: none;
         }
+        section {
+            margin: 40px 0;
+        }
+        .top-image {
+            width: 100%;
+            height: auto;
+        }
+        .social-links {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .social-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #333;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <img src="top_image.jpg" alt="Top Image" class="top-image">
+    </header>
+
     <div class="language-switcher">
         <button onclick="switchLanguage('en')">English</button>
         <button onclick="switchLanguage('ua')">Українська</button>
@@ -29,14 +66,58 @@
 
     <div class="content">
         <div id="en" class="lang">
-            <h1>Welcome to My Website</h1>
-            <p>This is a simple bilingual website. Use the switcher to change the language.</p>
+            <section>
+                <h2>About Us</h2>
+                <p>A citizens-led Ukrainian peace initiative, shaping a just and lasting peace resolution.</p>
+            </section>
+            <section>
+                <h2>Our Mission</h2>
+                <p>Our mission is ambitious - we want to create a just and lasting peace between Ukraine and Russia. Our less ambitious goal is to have a peace plan created by ordinary Ukrainian people. We hope world leaders will read it, think about it for 1 hour, and if they have a better one, that's great. If not, it's time to implement ours.</p>
+            </section>
+            <section>
+                <h2>History</h2>
+                <p>Everything started after watching a YouTube video titled "Build Anything with Llama 3.1 Agents, Here’s How", which inspired the idea of creating a peace plan from the Ukrainian people. <br>
+                - November 21: Facebook page was created. <br>
+                - December 17: Twitter account was created. <br>
+                - December 23: This website was launched.</p>
+            </section>
+            <section>
+                <h2>Our Social Networks</h2>
+                <p>Connect with us on social media:</p>
+                <a href="https://www.facebook.com/PeaceByUAPeople" target="_blank">Facebook</a>
+                <a href="https://x.com/PeaceByUAPeople" target="_blank">Twitter</a>
+            </section>
         </div>
 
         <div id="ua" class="lang hidden">
-            <h1>Ласкаво просимо на мій сайт</h1>
-            <p>Це простий двомовний сайт. Використовуйте перемикач, щоб змінити мову.</p>
+            <section>
+                <h2>Про нас</h2>
+                <p>Громадянська мирна ініціатива України, яка формує справедливу та довготривалу мирну резолюцію.</p>
+            </section>
+            <section>
+                <h2>Наша місія</h2>
+                <p>Наша місія амбітна - ми хочемо створити справедливий та довготривалий мир між Україною та Росією. Менш амбітна мета - це план миру, створений звичайними українцями. Ми хочемо, щоб світові лідери прочитали його, подумали протягом 1 години, і якщо у них є кращий, ми згодні. Якщо ні - час реалізовувати наш.</p>
+            </section>
+            <section>
+                <h2>Історія</h2>
+                <p>Все почалося з перегляду відео на ютюбі з назвою "Build Anything with Llama 3.1 Agents, Here’s How", і я вирішив а чому б не створити мирний план від українського народу. <br>
+                - 21 листопада: створено Facebook. <br>
+                - 17 грудня: створено Twitter. <br>
+                - 23 грудня: створено цей сайт.</p>
+            </section>
+            <section>
+                <h2>Наші соціальні мережі</h2>
+                <p>Приєднуйтеся до нас у соціальних мережах:</p>
+                <a href="https://www.facebook.com/PeaceByUAPeople" target="_blank">Facebook</a>
+                <a href="https://x.com/PeaceByUAPeople" target="_blank">Twitter</a>
+            </section>
         </div>
+    </div>
+
+    <div class="social-links">
+        <h2>Our Social Networks</h2>
+        <a href="https://www.facebook.com/PeaceByUAPeople" target="_blank">Facebook</a>
+        <a href="https://x.com/PeaceByUAPeople" target="_blank">Twitter</a>
     </div>
 
     <script>
